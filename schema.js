@@ -1,6 +1,6 @@
 const BaseJoi = require("joi");
 //use Joi define error schema
-
+const sanitizeHtml = require("sanitize-html");
 //a joi extension to validate that people is tring to inject html tag in input field
 const extension = (joi) => ({
   type: "string",
